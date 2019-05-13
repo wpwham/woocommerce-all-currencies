@@ -3,7 +3,7 @@ Contributors: wpwham
 Tags: woocommerce, currency, currencies, cryptocurrency, cryptocurrencies, woo commerce
 Requires at least: 4.4
 Tested up to: 5.2
-Stable tag: 2.2.1
+Stable tag: 2.3.0
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -40,12 +40,15 @@ In [Pro version](https://wpwham.com/products/all-currencies-for-woocommerce/) yo
 
 == Changelog ==
 
-= 2.2.1 - 26/08/2018 =
+= 2.3.0 - 2019-05-13 =
+* UPDATE: updated .pot file for translations
+
+= 2.2.1 - 2018-08-26 =
 * Fix - `delete_option()` added to `version_updated()`.
 * Dev - `[alg_wcac_lang]` shortcode added.
 * Dev - Cryptocurrencies - Huobi Token (HT) added.
 
-= 2.2.0 - 26/08/2018 =
+= 2.2.0 - 2018-08-26 =
 * Dev - Cryptocurrencies - Binance Coin (BNB) added.
 * Dev - Cryptocurrencies - Cardano (ADA) added.
 * Dev - Cryptocurrencies - EOS (EOS) added.
@@ -59,21 +62,21 @@ In [Pro version](https://wpwham.com/products/all-currencies-for-woocommerce/) yo
 * Dev - Admin settings restyled, descriptions updated and custom CSS removed.
 * Dev - Plugin URI updated.
 
-= 2.1.3 - 29/04/2018 =
+= 2.1.3 - 2018-04-29 =
 * Dev - Cryptocurrencies - Bitcoin Token (BTK) added.
 * Dev - Cryptocurrencies - Marscoin (MARS) added.
 * Dev - Cryptocurrencies - Dragonchain (DRGN) added.
 * Dev - "WC tested up to" added to the plugin header.
 
-= 2.1.2 - 26/12/2017 =
+= 2.1.2 - 2017-12-26 =
 * Dev - Cryptocurrencies - Bitcoin Cash (BCH) added.
 
-= 2.1.1 - 04/08/2017 =
+= 2.1.1 - 2017-08-04 =
 * Dev - "Use Currency Code as Symbol" option added.
 * Dev - "Country Currencies" and "Crypto Currencies" divided in separate sections.
 * Dev - Code refactoring.
 
-= 2.1.0 - 03/08/2017 =
+= 2.1.0 - 2017-08-03 =
 * Dev - Cryptocurrencies added.
 * Dev - Default currency symbols list updated.
 * Dev - "Reset settings" admin options added.
@@ -84,18 +87,18 @@ In [Pro version](https://wpwham.com/products/all-currencies-for-woocommerce/) yo
 * Dev - Plugin link updated (from `http://coder.fm` to `https://wpcodefactory.com`).
 * Dev - POT file updated.
 
-= 2.0.2 - 29/09/2016 =
+= 2.0.2 - 2016-09-29 =
 * Dev - Translation (POT) file added.
 * Dev - Multisite support added.
 * Fix - Plugin link fixed.
 
-= 2.0.1 - 10/09/2015 =
+= 2.0.1 - 2015-09-10 =
 * Fix - Settings link in plugin's `action_links` fixed.
 * Fix - Lao kip currency code fixed.
 * Fix - "All Currencies" list settings: default symbols are now set same as WooCommerce defaults.
 * Dev - Plugin renamed from "WooCommerce All Currencies" to "All Currencies for WooCommerce".
 
-= 2.0.0 - 24/07/2015 =
+= 2.0.0 - 2015-07-24 =
 * Dev - Hide currency symbol option added.
 * Dev - Major code refactoring. Settings are split in two sections: General and All Currencies.
 
