@@ -47,7 +47,7 @@ class Alg_WC_All_Currencies_Settings_Custom_Currencies extends Alg_WC_All_Curren
 				'default'  => 'no',
 				'type'     => 'checkbox',
 				'desc_tip' => apply_filters( 'alg_wc_all_currencies_filter', sprintf( 'You will need <a target="_blank" href="%s">All Currencies for WooCommerce Pro</a> plugin to enable this section.',
-					'https://wpfactory.com/item/all-currencies-for-woocommerce/' ), 'settings' ),
+					'https://wpwham.com/products/all-currencies-for-woocommerce/' ), 'settings' ),
 				'custom_attributes' => apply_filters( 'alg_wc_all_currencies_filter', array( 'disabled' => 'disabled' ), 'settings' ),
 			),
 			array(

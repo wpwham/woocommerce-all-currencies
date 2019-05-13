@@ -1,15 +1,15 @@
 <?php
 /*
 Plugin Name: All Currencies for WooCommerce
-Plugin URI: https://wpfactory.com/item/all-currencies-for-woocommerce/
+Plugin URI: https://wpwham.com/products/all-currencies-for-woocommerce/
 Description: Add all countries currencies and cryptocurrencies to WooCommerce.
 Version: 2.2.1
-Author: Algoritmika Ltd
-Author URI: http://www.algoritmika.com
+Author: WP Wham
+Author URI: https://wpwham.com
 Text Domain: woocommerce-all-currencies
 Domain Path: /langs
-Copyright: © 2018 Algoritmika Ltd.
-WC tested up to: 3.4
+Copyright: © 2019 WP Wham
+WC tested up to: 3.5
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 */
@@ -117,7 +117,7 @@ final class Alg_WC_All_Currencies {
 		$custom_links = array();
 		$custom_links[] = '<a href="' . admin_url( 'admin.php?page=wc-settings&tab=alg_wc_all_currencies' ) . '">' . __( 'Settings', 'woocommerce' ) . '</a>';
 		if ( 'woocommerce-all-currencies.php' === basename( __FILE__ ) ) {
-			$custom_links[] = '<a href="https://wpfactory.com/item/all-currencies-for-woocommerce/">' . __( 'Unlock All', 'woocommerce-all-currencies' ) . '</a>';
+			$custom_links[] = '<a href="https://wpwham.com/products/all-currencies-for-woocommerce/">' . __( 'Unlock All', 'woocommerce-all-currencies' ) . '</a>';
 		}
 		return array_merge( $custom_links, $links );
 	}

@@ -32,7 +32,7 @@ if ( ! function_exists( 'alg_wcac_get_list_section_settings' ) ) {
 				'title'    => $title,
 				'type'     => 'title',
 				'desc'     => apply_filters( 'alg_wc_all_currencies_filter', '<em>' . sprintf( 'You will need <a target="_blank" href="%s">All Currencies for WooCommerce Pro</a> plugin to change currency symbol.',
-					'https://wpfactory.com/item/all-currencies-for-woocommerce/' ) . '</em>', 'settings' ),
+					'https://wpwham.com/products/all-currencies-for-woocommerce/' ) . '</em>', 'settings' ),
 				'id'       => 'alg_wc_all_currencies_list_' . $list . '_options',
 			),
 		);

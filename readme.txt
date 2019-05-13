@@ -1,8 +1,8 @@
 === All Currencies for WooCommerce ===
-Contributors: algoritmika, anbinder, wpwham
+Contributors: wpwham
 Tags: woocommerce, currency, currencies, cryptocurrency, cryptocurrencies, woo commerce
 Requires at least: 4.4
-Tested up to: 4.9
+Tested up to: 5.2
 Stable tag: 2.2.1
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -23,14 +23,14 @@ Auroracoin, Binance Coin, Bitcoin, Bitcoin Cash, Bitcoin Token, BitConnect, Card
 
 = Pro version =
 
-In [Pro version](https://wpfactory.com/item/all-currencies-for-woocommerce/) you can add also custom currencies and set custom currency symbols.
+In [Pro version](https://wpwham.com/products/all-currencies-for-woocommerce/) you can add also custom currencies and set custom currency symbols.
 
 = Feedback =
 * We are open to your suggestions and feedback. Thank you for using or trying out one of our plugins!
-* Drop us a line at [www.algoritmika.com](http://www.algoritmika.com).
+* Drop us a line at [www.wpwham.com](http://www.wpwham.com).
 
 = More =
-* Visit the [All Currencies for WooCommerce plugin page](https://wpfactory.com/item/all-currencies-for-woocommerce/).
+* Visit the [All Currencies for WooCommerce plugin page](https://wpwham.com/products/all-currencies-for-woocommerce/).
 
 == Installation ==
 

@@ -44,7 +44,7 @@ class Alg_WC_All_Currencies_Settings_General extends Alg_WC_All_Currencies_Setti
 					'type'     => 'text',
 					'default'  => alg_wc_all_currencies()->core->get_default_currency_symbol(),
 					'desc'     => apply_filters( 'alg_wc_all_currencies_filter', sprintf( '<br>You will need <a target="_blank" href="%s">All Currencies for WooCommerce Pro</a> plugin to change currency symbol.',
-						'https://wpfactory.com/item/all-currencies-for-woocommerce/' ), 'settings' ),
+						'https://wpwham.com/products/all-currencies-for-woocommerce/' ), 'settings' ),
 					'custom_attributes' => apply_filters( 'alg_wc_all_currencies_filter', array( 'readonly' => 'readonly' ), 'settings' ),
 				);
 			}
@@ -114,7 +114,7 @@ class Alg_WC_All_Currencies_Settings_General extends Alg_WC_All_Currencies_Setti
 				'type'     => 'text',
 				'default'  => alg_wc_all_currencies()->core->get_default_currency_symbol(),
 				'desc'     => apply_filters( 'alg_wc_all_currencies_filter', sprintf( '<br>You will need <a target="_blank" href="%s">All Currencies for WooCommerce Pro</a> plugin to change currency symbol.',
-					'https://wpfactory.com/item/all-currencies-for-woocommerce/' ), 'settings' ),
+					'https://wpwham.com/products/all-currencies-for-woocommerce/' ), 'settings' ),
 				'custom_attributes' => apply_filters( 'alg_wc_all_currencies_filter', array( 'readonly' => 'readonly' ), 'settings' ),
 			),
 			array(
