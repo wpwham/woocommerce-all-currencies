@@ -31,7 +31,7 @@ class Alg_WC_All_Currencies_Settings_List extends Alg_WC_All_Currencies_Settings
 	 * @version 2.2.0
 	 * @since   2.0.0
 	 */
-	function get_settings() {
+	public static function get_settings() {
 		return alg_wcac_get_list_section_settings( 'country' );
 	}
 

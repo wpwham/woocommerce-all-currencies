@@ -33,7 +33,7 @@ class Alg_WC_All_Currencies_Settings_Custom_Currencies extends Alg_WC_All_Curren
 	 * @todo    [now] fix symbol bug
 	 * @todo    [now] maybe better solution?!?
 	 */
-	function get_settings() {
+	public static function get_settings() {
 		$settings = array(
 			array(
 				'title'    => __( 'Custom Currencies', 'woocommerce-all-currencies' ),

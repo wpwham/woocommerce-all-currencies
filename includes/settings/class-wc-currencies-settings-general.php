@@ -58,7 +58,7 @@ class Alg_WC_All_Currencies_Settings_General extends Alg_WC_All_Currencies_Setti
 	 *
 	 * @version 2.2.1
 	 */
-	function get_settings() {
+	public static function get_settings() {
 		$code = get_woocommerce_currency();
 		$settings = array(
 			array(
