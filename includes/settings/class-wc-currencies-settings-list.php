@@ -2,9 +2,10 @@
 /**
  * WooCommerce All Currencies - List Country Section Settings
  *
- * @version 2.2.0
+ * @version 2.3.7
  * @since   2.0.0
  * @author  Algoritmika Ltd.
+ * @author  WP Wham
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -28,7 +29,7 @@ class Alg_WC_All_Currencies_Settings_List extends Alg_WC_All_Currencies_Settings
 	/**
 	 * get_settings.
 	 *
-	 * @version 2.2.0
+	 * @version 2.3.7
 	 * @since   2.0.0
 	 */
 	public static function get_settings() {

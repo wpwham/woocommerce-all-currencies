@@ -2,9 +2,10 @@
 /**
  * WooCommerce All Currencies - General Section Settings
  *
- * @version 2.2.1
+ * @version 2.3.7
  * @since   2.0.0
  * @author  Algoritmika Ltd.
+ * @author  WP Wham
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -56,7 +57,7 @@ class Alg_WC_All_Currencies_Settings_General extends Alg_WC_All_Currencies_Setti
 	/**
 	 * get_settings.
 	 *
-	 * @version 2.2.1
+	 * @version 2.3.7
 	 */
 	public static function get_settings() {
 		$code = get_woocommerce_currency();

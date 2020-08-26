@@ -2,9 +2,10 @@
 /**
  * WooCommerce All Currencies - List Cryptocurrencies Section Settings
  *
- * @version 2.2.0
+ * @version 2.3.7
  * @since   2.1.1
  * @author  Algoritmika Ltd.
+ * @author  WP Wham
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -28,7 +29,7 @@ class Alg_WC_All_Currencies_Settings_List_Crypto extends Alg_WC_All_Currencies_S
 	/**
 	 * get_settings.
 	 *
-	 * @version 2.2.0
+	 * @version 2.3.7
 	 * @since   2.1.1
 	 */
 	public static function get_settings() {
