@@ -40,7 +40,15 @@ if ( ! function_exists( 'alg_wcac_get_list_section_settings' ) ) {
 			$settings = array_merge( $settings, array(
 				array(
 					'title'    => '[' . $code . '] ' . $name,
+					'id'       => "alg_wc_all_currencies_names[{$code}]",
+					'desc'     => __( 'Name', 'woocommerce-all-currencies' ),
+					'default'  => $name,
+					'type'     => 'text',
+					'custom_attributes' => apply_filters( 'alg_wc_all_currencies_filter', array( 'readonly' => 'readonly' ), 'settings' ),
+				),
+				array(
 					'id'       => "alg_wc_all_currencies_symbols[{$code}]",
+					'desc'     => __( 'Symbol', 'woocommerce-all-currencies' ),
 					'default'  => alg_wc_all_currencies()->core->get_default_currency_symbol( $code, $symbols[ $code ] ),
 					'type'     => 'text',
 					'custom_attributes' => apply_filters( 'alg_wc_all_currencies_filter', array( 'readonly' => 'readonly' ), 'settings' ),

@@ -17,7 +17,6 @@ class Alg_WC_All_Currencies_Core {
 	 * Constructor.
 	 *
 	 * @version 2.2.1
-	 * @todo    [dev] (maybe) remove country currencies (as it is already included in current WC version)
 	 * @todo    [dev] (maybe) rename plugin to "Currencies for WooCommerce"
 	 * @todo    [feature] (maybe) virtual currencies
 	 */
@@ -87,13 +86,13 @@ class Alg_WC_All_Currencies_Core {
 	/**
 	 * add_all_currencies.
 	 *
-	 * @version 2.2.0
+	 * @version 2.4.0
 	 */
 	function add_all_currencies( $default_currencies ) {
 		// Lists
 		$currencies = alg_wcac_get_all_currencies_names();
 		foreach( $currencies as $code => $name ) {
-			$default_currencies[ $code ] = $name;
+			$default_currencies[ $code ] = apply_filters( 'alg_wc_all_currencies_filter', $name, 'value_name', array( 'currency_code' => $code ) );
 		}
 		// Custom currencies
 		if ( 'yes' === get_option( 'alg_wc_all_currencies_custom_currencies_enabled', 'no' ) ) {
