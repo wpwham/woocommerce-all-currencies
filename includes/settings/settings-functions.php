@@ -31,8 +31,12 @@ if ( ! function_exists( 'alg_wcac_get_list_section_settings' ) ) {
 			array(
 				'title'    => $title,
 				'type'     => 'title',
-				'desc'     => apply_filters( 'alg_wc_all_currencies_filter', '<em>' . sprintf( 'You will need <a target="_blank" href="%s">All Currencies for WooCommerce Pro</a> plugin to change currency symbol.',
-					'https://wpwham.com/products/all-currencies-for-woocommerce/' ) . '</em>', 'settings' ),
+				'desc'     => apply_filters( 'alg_wc_all_currencies_filter',
+					'<em>' . sprintf(
+						__( 'You will need <a target="_blank" href="%s">All Currencies for WooCommerce Pro</a> plugin to change currency names and symbols.', 'woocommerce-all-currencies' ),
+						'https://wpwham.com/products/all-currencies-for-woocommerce/?utm_source=settings_currencies&utm_campaign=free&utm_medium=all_currencies'
+					) . '</em>', 'settings'
+				),
 				'id'       => 'alg_wc_all_currencies_list_' . $list . '_options',
 			),
 		);

@@ -118,7 +118,7 @@ final class Alg_WC_All_Currencies {
 		$custom_links = array();
 		$custom_links[] = '<a href="' . admin_url( 'admin.php?page=wc-settings&tab=alg_wc_all_currencies' ) . '">' . __( 'Settings', 'woocommerce' ) . '</a>';
 		if ( 'woocommerce-all-currencies.php' === basename( __FILE__ ) ) {
-			$custom_links[] = '<a href="https://wpwham.com/products/all-currencies-for-woocommerce/">' . __( 'Unlock All', 'woocommerce-all-currencies' ) . '</a>';
+			$custom_links[] = '<a href="https://wpwham.com/products/all-currencies-for-woocommerce/?utm_source=plugins_page&utm_campaign=free&utm_medium=all_currencies">' . __( 'Unlock All', 'woocommerce-all-currencies' ) . '</a>';
 		}
 		return array_merge( $custom_links, $links );
 	}
