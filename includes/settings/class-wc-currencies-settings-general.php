@@ -70,9 +70,15 @@ class Alg_WC_All_Currencies_Settings_General extends Alg_WC_All_Currencies_Setti
 			array(
 				'title'    => __( 'WooCommerce All Currencies', 'woocommerce-all-currencies' ),
 				'desc'     => '<strong>' . __( 'Enable plugin', 'woocommerce-all-currencies' ) . '</strong>',
-				'desc_tip' => __( 'Add all world currencies to your WooCommerce store.', 'woocommerce-all-currencies' ) . '<br>' .
-					sprintf( __( 'Currencies will be added to %s.', 'woocommerce-all-currencies' ),
-						'<a href="' . admin_url( 'admin.php?page=wc-settings&tab=general' ) . '">' . __( 'WooCommerce > Settings > General', 'woocommerce-all-currencies' ) . '</a>' ),
+				'desc_tip' => __( 'Add all world currencies to your WooCommerce store.', 'woocommerce-all-currencies' )
+					. '<br />'
+					. sprintf(
+						__( 'Currencies will be added to %s.', 'woocommerce-all-currencies' ),
+						'<a href="' . admin_url( 'admin.php?page=wc-settings&tab=general' ) . '">' . __( 'WooCommerce > Settings > General', 'woocommerce-all-currencies' ) . '</a>' 
+					)
+					. '<br />'
+					. '<a href="https://wpwham.com/documentation/all-currencies-for-woocommerce/?utm_source=documentation_link&utm_campaign=free&utm_medium=all_currencies" target="_blank" class="button">'
+					. __( 'Documentation', 'woocommerce-all-currencies' ) . '</a>',
 				'id'       => 'alg_wc_all_currencies_enabled',
 				'default'  => 'yes',
 				'type'     => 'checkbox'
