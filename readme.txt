@@ -2,8 +2,8 @@
 Contributors: wpwham
 Tags: woocommerce, currency, currencies, cryptocurrency, cryptocurrencies, woo commerce
 Requires at least: 4.4
-Tested up to: 5.6
-Stable tag: 2.3.9
+Tested up to: 5.7
+Stable tag: 2.4.0
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -19,11 +19,11 @@ The plugin extends WooCommerce e-commerce plugin by adding all world currencies 
 
 = Full list of added cryptocurrencies =
 
-Auroracoin, Binance Coin, Bitcoin, Bitcoin Cash, Bitcoin Token, BitConnect, Cardano, Coinye, DigitalNote, Dragonchain, Emercoin, EOS, Ethereum, Ethereum Classic, Freemasoncoin, Gridcoin, Huobi Token, IOTA, Litecoin, Marscoin, MazaCoin, Monero, Namecoin, NEM, Nxt, Omni, PACcoin, Peercoin, PotCoin, Primecoin, Ripple, SixEleven, SmartCash, Stellar, Synereo AMP, Tether, Titcoin, Ubiq, Vertcoin, Zcash.
+Auroracoin, Binance Coin, Bitcoin, Bitcoin Cash, Bitcoin Token, BitConnect, Cardano, Dash, DigitalNote, Dogecoin, Dragonchain, Emercoin, EOS, Ethereum, Ethereum Classic, Filecoin, Gridcoin, Huobi Token, IOTA, Klaytn, Litecoin, Marscoin, MazaCoin, Monero, Namecoin, Neo, NEM, Nxt, Omni, PACcoin, Peercoin, Polkadot, PotCoin, Primecoin, Ripple, SixEleven, SmartCash, Solana, Stellar, Synereo AMP, Terra, Tether, THETA, Titcoin, TRON, Ubiq, VeChain, Vertcoin, Zcash.
 
 = Pro version =
 
-In [Pro version](https://wpwham.com/products/all-currencies-for-woocommerce/) you can add also custom currencies and set custom currency symbols.
+In [Pro version](https://wpwham.com/products/all-currencies-for-woocommerce/) you can add also custom currencies and set custom currency names & symbols.
 
 = Feedback =
 * We are open to your suggestions and feedback. Thank you for using or trying out one of our plugins!
@@ -39,6 +39,11 @@ In [Pro version](https://wpwham.com/products/all-currencies-for-woocommerce/) yo
 3. Start by visiting plugin settings at "WooCommerce > Settings > Currencies".
 
 == Changelog ==
+
+= 2.4.0 - 2021-04-26 =
+* NEW: added ability to customize currency names (pro version only).
+* NEW: updated list of cryptocurrencies: added Dash (DASH), Dogecoin (DOGE), Filecoin (FIL), Klaytn (KLAY), Neo (NEO), Polkadot (DOT), Solana (SOL), Terra (LUNA), THETA (THETA), TRON (TRX), VeChain (VET); removed Coinye (KOI), Freemasoncoin (FMC); updated currency codes for MazaCoin (MZC->MAZA), Omni (MSC->OMNI).
+* UPDATE: updated .pot file for translations.
 
 = 2.3.9 - 2021-01-21 =
 * UPDATE: bump tested versions.

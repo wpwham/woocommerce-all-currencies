@@ -2,16 +2,17 @@
 /**
  * WooCommerce All Currencies - Settings Functions
  *
- * @version 2.2.0
+ * @version 2.4.0
  * @since   2.0.0
  * @author  Algoritmika Ltd.
+ * @author  WP Wham
  */
 
 if ( ! function_exists( 'alg_wcac_get_list_section_settings' ) ) {
 	/**
 	 * alg_wcac_get_list_section_settings.
 	 *
-	 * @version 2.2.0
+	 * @version 2.4.0
 	 * @since   2.1.1
 	 */
 	function alg_wcac_get_list_section_settings( $list ) {

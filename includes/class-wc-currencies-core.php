@@ -2,9 +2,10 @@
 /**
  * WooCommerce All Currencies - Core
  *
- * @version 2.2.1
+ * @version 2.4.0
  * @since   2.0.0
  * @author  Algoritmika Ltd.
+ * @author  WP Wham
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly

@@ -2,7 +2,7 @@
 /**
  * WooCommerce All Currencies - General Section Settings
  *
- * @version 2.3.7
+ * @version 2.4.0
  * @since   2.0.0
  * @author  Algoritmika Ltd.
  * @author  WP Wham
@@ -31,7 +31,7 @@ class Alg_WC_All_Currencies_Settings_General extends Alg_WC_All_Currencies_Setti
 	/**
 	 * add_edit_currency_symbol_field.
 	 *
-	 * @version 2.2.1
+	 * @version 2.4.0
 	 */
 	function add_edit_currency_symbol_field( $settings ) {
 		$updated_settings = array();
@@ -57,7 +57,7 @@ class Alg_WC_All_Currencies_Settings_General extends Alg_WC_All_Currencies_Setti
 	/**
 	 * get_settings.
 	 *
-	 * @version 2.3.7
+	 * @version 2.4.0
 	 */
 	public static function get_settings() {
 		$code = get_woocommerce_currency();

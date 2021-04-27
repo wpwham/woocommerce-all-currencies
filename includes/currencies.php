@@ -2,9 +2,10 @@
 /**
  * WooCommerce All Currencies - Currencies
  *
- * @version 2.2.1
+ * @version 2.4.0
  * @since   2.0.0
  * @author  Algoritmika Ltd.
+ * @author  WP Wham
  */
 
 if ( ! function_exists( 'alg_wcac_get_all_currencies_names' ) ) {
