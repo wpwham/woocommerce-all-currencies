@@ -3,14 +3,14 @@
 Plugin Name: All Currencies for WooCommerce
 Plugin URI: https://wpwham.com/products/all-currencies-for-woocommerce/
 Description: Add all countries currencies and cryptocurrencies to WooCommerce.
-Version: 2.4.0
+Version: 2.4.1
 Author: WP Wham
 Author URI: https://wpwham.com
 Text Domain: woocommerce-all-currencies
 Domain Path: /langs
 WC requires at least: 3.0
-WC tested up to: 5.2
-Copyright: © 2018-2021 WP Wham. All rights reserved.
+WC tested up to: 6.5
+Copyright: © 2018-2022 WP Wham. All rights reserved.
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 */
@@ -43,7 +43,7 @@ if ( ! class_exists( 'Alg_WC_All_Currencies' ) ) :
 /**
  * Main Alg_WC_All_Currencies Class
  *
- * @version 2.2.1
+ * @version 2.4.1
  * @class   Alg_WC_All_Currencies
  */
 final class Alg_WC_All_Currencies {
@@ -54,7 +54,7 @@ final class Alg_WC_All_Currencies {
 	 * @var   string
 	 * @since 2.1.0
 	 */
-	public $version = '2.4.0';
+	public $version = '2.4.1';
 
 	/**
 	 * @var Alg_WC_All_Currencies The single instance of the class
