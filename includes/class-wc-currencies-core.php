@@ -2,7 +2,7 @@
 /**
  * WooCommerce All Currencies - Core
  *
- * @version 2.4.0
+ * @version 2.4.2
  * @since   2.0.0
  * @author  Algoritmika Ltd.
  * @author  WP Wham
@@ -13,6 +13,8 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 if ( ! class_exists( 'Alg_WC_All_Currencies_Core' ) ) :
 
 class Alg_WC_All_Currencies_Core {
+	
+	public $symbols = null;
 
 	/**
 	 * Constructor.
