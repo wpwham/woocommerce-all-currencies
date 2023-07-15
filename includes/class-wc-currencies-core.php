@@ -13,6 +13,8 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 if ( ! class_exists( 'Alg_WC_All_Currencies_Core' ) ) :
 
 class Alg_WC_All_Currencies_Core {
+	
+	public $symbols = null;
 
 	/**
 	 * Constructor.

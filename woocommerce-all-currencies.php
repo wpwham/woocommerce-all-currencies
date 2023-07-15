@@ -47,7 +47,12 @@ if ( ! class_exists( 'Alg_WC_All_Currencies' ) ) :
  * @class   Alg_WC_All_Currencies
  */
 final class Alg_WC_All_Currencies {
-
+	
+	public $core         = null;
+	public $settings     = null;
+	public $value_symbol = null;
+	public $value_name   = null;
+	
 	/**
 	 * Plugin version.
 	 *
