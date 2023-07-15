@@ -2,7 +2,7 @@
 /**
  * WooCommerce All Currencies - List Country Section Settings
  *
- * @version 2.3.7
+ * @version 2.4.2
  * @since   2.0.0
  * @author  Algoritmika Ltd.
  * @author  WP Wham

@@ -2,7 +2,7 @@
 /**
  * WooCommerce All Currencies - Custom Currencies Section Settings
  *
- * @version 2.4.0
+ * @version 2.4.2
  * @since   2.2.0
  * @author  Algoritmika Ltd.
  * @author  WP Wham
