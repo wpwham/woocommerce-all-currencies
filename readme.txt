@@ -2,8 +2,8 @@
 Contributors: wpwham
 Tags: woocommerce, currency, currencies, cryptocurrency, cryptocurrencies, woo commerce
 Requires at least: 4.4
-Tested up to: 6.2
-Stable tag: 2.4.2
+Tested up to: 6.6
+Stable tag: 2.4.3
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -39,6 +39,9 @@ In [Pro version](https://wpwham.com/products/all-currencies-for-woocommerce/) yo
 3. Start by visiting plugin settings at "WooCommerce > Settings > Currencies".
 
 == Changelog ==
+
+= 2.4.3 - 2024-08-29 =
+* UPDATE: bump tested versions.
 
 = 2.4.2 - 2023-07-15 =
 * FIX: PHP 8.2 notices.
