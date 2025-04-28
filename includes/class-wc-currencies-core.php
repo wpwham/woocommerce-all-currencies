@@ -41,8 +41,9 @@ class Alg_WC_All_Currencies_Core {
 	function language_shortcode( $atts, $content = '' ) {
 		// E.g.: `[alg_wcac_lang lang="EN,DE" lang_symbol="$" not_lang_symbol="USD"]`
 		if ( isset( $atts['lang_symbol'] ) && isset( $atts['not_lang_symbol'] ) && ! empty( $atts['lang'] ) ) {
-			return ( ! defined( 'ICL_LANGUAGE_CODE' ) || ! in_array( strtolower( ICL_LANGUAGE_CODE ), array_map( 'trim', explode( ',', strtolower( $atts['lang'] ) ) ) ) ) ?
-				$atts['not_lang_symbol'] : $atts['lang_symbol'];
+			return ( ! defined( 'ICL_LANGUAGE_CODE' ) || ! in_array( strtolower( ICL_LANGUAGE_CODE ), array_map( 'trim', explode( ',', strtolower( $atts['lang'] ) ) ) ) ) 
+				? esc_html( $atts['not_lang_symbol'] ) 
+				: esc_html( $atts['lang_symbol'] );
 		}
 		// E.g.: `[alg_wcac_lang lang="EN,DE"]$[/alg_wcac_lang][alg_wcac_lang not_lang="EN,DE"]USD[/alg_wcac_lang]`
 		return (
