@@ -3,12 +3,12 @@
 Plugin Name: All Currencies for WooCommerce
 Plugin URI: https://wpwham.com/products/all-currencies-for-woocommerce/
 Description: Add all countries currencies and cryptocurrencies to WooCommerce.
-Version: 2.4.3
+Version: 2.4.4
 Author: WP Wham
 Author URI: https://wpwham.com
 Text Domain: woocommerce-all-currencies
 Domain Path: /langs
-Copyright: © 2018-2024 WP Wham. All rights reserved.
+Copyright: © 2018-2025 WP Wham. All rights reserved.
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 */
@@ -47,7 +47,7 @@ if ( ! class_exists( 'Alg_WC_All_Currencies' ) ) :
 /**
  * Main Alg_WC_All_Currencies Class
  *
- * @version 2.4.3
+ * @version 2.4.4
  * @class   Alg_WC_All_Currencies
  */
 final class Alg_WC_All_Currencies {
@@ -63,7 +63,7 @@ final class Alg_WC_All_Currencies {
 	 * @var   string
 	 * @since 2.1.0
 	 */
-	public $version = '2.4.3';
+	public $version = '2.4.4';
 
 	/**
 	 * @var Alg_WC_All_Currencies The single instance of the class
@@ -87,12 +87,12 @@ final class Alg_WC_All_Currencies {
 	/**
 	 * Alg_WC_All_Currencies Constructor.
 	 *
-	 * @version 2.3.7
+	 * @version 2.4.4
 	 */
 	function __construct() {
 
 		// Set up localisation
-		load_plugin_textdomain( 'woocommerce-all-currencies', false, dirname( plugin_basename( __FILE__ ) ) . '/langs/' );
+		add_action( 'init', array( $this, 'load_localization' ) );
 
 		// Include required files
 		$this->includes();
@@ -114,6 +114,13 @@ final class Alg_WC_All_Currencies {
 				add_action( 'admin_init', array( $this, 'version_updated' ) );
 			}
 		}
+	}
+	
+	/**
+	 * @since   2.4.4
+	 */
+	public function load_localization() {
+		load_plugin_textdomain( 'woocommerce-all-currencies', false, dirname( plugin_basename( __FILE__ ) ) . '/langs/' );
 	}
 
 	/**
