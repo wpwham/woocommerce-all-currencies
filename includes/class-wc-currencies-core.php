@@ -2,7 +2,7 @@
 /**
  * WooCommerce All Currencies - Core
  *
- * @version 2.4.2
+ * @version 2.4.4
  * @since   2.0.0
  * @author  Algoritmika Ltd.
  * @author  WP Wham
@@ -35,7 +35,7 @@ class Alg_WC_All_Currencies_Core {
 	/**
 	 * language_shortcode.
 	 *
-	 * @version 2.2.1
+	 * @version 2.4.4
 	 * @since   2.2.1
 	 */
 	function language_shortcode( $atts, $content = '' ) {
