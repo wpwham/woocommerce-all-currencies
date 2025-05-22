@@ -92,7 +92,7 @@ final class Alg_WC_All_Currencies {
 	function __construct() {
 
 		// Set up localisation
-		load_plugin_textdomain( 'woocommerce-all-currencies', false, dirname( plugin_basename( __FILE__ ) ) . '/langs/' );
+		add_action( 'init', array( $this, 'load_localization' ) );
 
 		// Include required files
 		$this->includes();
@@ -114,6 +114,13 @@ final class Alg_WC_All_Currencies {
 				add_action( 'admin_init', array( $this, 'version_updated' ) );
 			}
 		}
+	}
+	
+	/**
+	 * @since   2.4.4
+	 */
+	public function load_localization() {
+		load_plugin_textdomain( 'woocommerce-all-currencies', false, dirname( plugin_basename( __FILE__ ) ) . '/langs/' );
 	}
 
 	/**
