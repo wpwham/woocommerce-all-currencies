@@ -25,8 +25,8 @@ class Alg_WC_All_Currencies_Core {
 	 */
 	function __construct() {
 		if ( 'yes' === get_option( 'alg_wc_all_currencies_enabled', 'yes' ) ) {
-			add_filter( 'woocommerce_currencies',      array( $this, 'add_all_currencies'),     PHP_INT_MAX );
-			add_filter( 'woocommerce_currency_symbol', array( $this, 'change_currency_symbol'), PHP_INT_MAX, 2 );
+			add_filter( 'woocommerce_currencies',      array( $this, 'add_all_currencies' ),     PHP_INT_MAX );
+			add_filter( 'woocommerce_currency_symbol', array( $this, 'change_currency_symbol' ), PHP_INT_MAX, 2 );
 			$this->symbols = alg_wcac_get_all_currencies_symbols();
 			add_shortcode( 'alg_wcac_lang', array( $this, 'language_shortcode' ) );
 		}
@@ -81,9 +81,9 @@ class Alg_WC_All_Currencies_Core {
 	 * @since   2.1.1
 	 */
 	function get_original_woocommerce_currency_symbol( $code = '' ) {
-		remove_filter( 'woocommerce_currency_symbol', array( $this, 'change_currency_symbol'), PHP_INT_MAX, 2 );
+		remove_filter( 'woocommerce_currency_symbol', array( $this, 'change_currency_symbol' ), PHP_INT_MAX, 2 );
 		$symbol = get_woocommerce_currency_symbol( $code );
-		add_filter(    'woocommerce_currency_symbol', array( $this, 'change_currency_symbol'), PHP_INT_MAX, 2 );
+		add_filter(    'woocommerce_currency_symbol', array( $this, 'change_currency_symbol' ), PHP_INT_MAX, 2 );
 		return $symbol;
 	}
 
