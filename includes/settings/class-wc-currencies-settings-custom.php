@@ -25,7 +25,10 @@ class Alg_WC_All_Currencies_Settings_Custom_Currencies extends Alg_WC_All_Curren
 	 */
 	function __construct() {
 		$this->id   = 'custom_currencies';
-		$this->desc = __( 'Custom Currencies', 'woocommerce-all-currencies' );
+		$this->desc = 'Custom Currencies';
+		add_action( 'init', function() {
+			$this->desc = __( 'Custom Currencies', 'woocommerce-all-currencies' );
+		} );
 		parent::__construct();
 	}
 

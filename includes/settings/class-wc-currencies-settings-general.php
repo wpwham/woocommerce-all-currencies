@@ -24,7 +24,10 @@ class Alg_WC_All_Currencies_Settings_General extends Alg_WC_All_Currencies_Setti
 	 */
 	function __construct() {
 		$this->id   = '';
-		$this->desc = __( 'General', 'woocommerce-all-currencies' );
+		$this->desc = 'General';
+		add_action( 'init', function() {
+			$this->desc = __( 'General', 'woocommerce-all-currencies' );
+		} );
 		parent::__construct();
 		if ( 'yes' === get_option( 'alg_wc_all_currencies_enabled', 'yes' ) ) {
 			add_filter( 'woocommerce_general_settings', array( $this, 'add_edit_currency_symbol_field' ), PHP_INT_MAX );

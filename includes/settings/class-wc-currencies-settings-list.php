@@ -25,7 +25,10 @@ class Alg_WC_All_Currencies_Settings_List extends Alg_WC_All_Currencies_Settings
 	 */
 	function __construct() {
 		$this->id   = 'currencies_list';
-		$this->desc = __( 'Country Currencies', 'woocommerce-all-currencies' );
+		$this->desc = 'Country Currencies';
+		add_action( 'init', function() {
+			$this->desc = __( 'Country Currencies', 'woocommerce-all-currencies' );
+		} );
 		parent::__construct();
 	}
 
