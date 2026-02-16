@@ -25,7 +25,10 @@ class Alg_WC_All_Currencies_Settings_List_Crypto extends Alg_WC_All_Currencies_S
 	 */
 	function __construct() {
 		$this->id   = 'crypto_currencies_list';
-		$this->desc = __( 'Crypto Currencies', 'woocommerce-all-currencies' );
+		$this->desc = 'Crypto Currencies';
+		add_action( 'init', function() {
+			$this->desc = __( 'Crypto Currencies', 'woocommerce-all-currencies' );
+		} );
 		parent::__construct();
 	}
 

@@ -20,7 +20,10 @@ class Alg_WC_Settings_All_Currencies extends WC_Settings_Page {
 	 */
 	function __construct() {
 		$this->id    = 'alg_wc_all_currencies';
-		$this->label = __( 'Currencies', 'woocommerce-all-currencies' );
+		$this->label = 'Currencies';
+		add_action( 'init', function() {
+			$this->label = __( 'Currencies', 'woocommerce-all-currencies' );
+		} );
 		parent::__construct();
 	}
 
