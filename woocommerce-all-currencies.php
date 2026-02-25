@@ -89,7 +89,7 @@ final class Alg_WC_All_Currencies {
 	 *
 	 * @version 2.4.4
 	 */
-	function __construct() {
+	public function __construct() {
 
 		// Include required files
 		add_action( 'init', array( $this, 'includes' ) );
@@ -186,7 +186,7 @@ final class Alg_WC_All_Currencies {
 	 *
 	 * @version 2.2.0
 	 */
-	function includes() {
+	public function includes() {
 		// Set up localization
 		load_plugin_textdomain( 'woocommerce-all-currencies', false, dirname( plugin_basename( __FILE__ ) ) . '/langs/' );
 		// Currencies array
