@@ -89,30 +89,18 @@ final class Alg_WC_All_Currencies {
 	 *
 	 * @version 2.4.4
 	 */
-	function __construct() {
-
-		// Set up localisation
-		add_action( 'init', array( $this, 'load_localization' ) );
+	public function __construct() {
 
 		// Include required files
-		$this->includes();
+		add_action( 'init', array( $this, 'includes' ) );
 
 		// Admin
-		if ( is_admin() ) {
-			add_filter( 'woocommerce_get_settings_pages',                     array( $this, 'add_woocommerce_currencies_settings_tab' ) );
-			add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), array( $this, 'action_links' ) );
-			// Settings
-			require_once( 'includes/settings/settings-functions.php' );
-			require_once( 'includes/settings/class-wc-currencies-settings-section.php' );
-			$this->settings = array();
-			$this->settings['general']       = require_once( 'includes/settings/class-wc-currencies-settings-general.php' );
-			$this->settings['list']          = require_once( 'includes/settings/class-wc-currencies-settings-list.php' );
-			$this->settings['list-crypto']   = require_once( 'includes/settings/class-wc-currencies-settings-list-crypto.php' );
-			$this->settings['custom']        = require_once( 'includes/settings/class-wc-currencies-settings-custom.php' );
-			add_action( 'woocommerce_system_status_report', array( $this, 'add_settings_to_status_report' ) );
-			if ( get_option( 'alg_wc_all_currencies_version', '' ) !== $this->version ) {
-				add_action( 'admin_init', array( $this, 'version_updated' ) );
-			}
+		add_filter( 'woocommerce_get_settings_pages', array( $this, 'add_woocommerce_currencies_settings_tab' ) );
+		add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), array( $this, 'action_links' ) );
+
+		// Updates
+		if ( get_option( 'alg_wc_all_currencies_version', '' ) !== $this->version ) {
+			add_action( 'admin_init', array( $this, 'version_updated' ) );
 		}
 	}
 	
@@ -198,11 +186,23 @@ final class Alg_WC_All_Currencies {
 	 *
 	 * @version 2.2.0
 	 */
-	function includes() {
+	public function includes() {
+		// Set up localization
+		load_plugin_textdomain( 'woocommerce-all-currencies', false, dirname( plugin_basename( __FILE__ ) ) . '/langs/' );
 		// Currencies array
 		require_once( 'includes/currencies.php' );
 		// Core
 		$this->core = require_once( 'includes/class-wc-currencies-core.php' );
+		if ( is_admin() ) {
+			require_once( 'includes/settings/settings-functions.php' );
+			require_once( 'includes/settings/class-wc-currencies-settings-section.php' );
+			$this->settings = array();
+			$this->settings['general']       = require_once( 'includes/settings/class-wc-currencies-settings-general.php' );
+			$this->settings['list']          = require_once( 'includes/settings/class-wc-currencies-settings-list.php' );
+			$this->settings['list-crypto']   = require_once( 'includes/settings/class-wc-currencies-settings-list-crypto.php' );
+			$this->settings['custom']        = require_once( 'includes/settings/class-wc-currencies-settings-custom.php' );
+			add_action( 'woocommerce_system_status_report', array( $this, 'add_settings_to_status_report' ) );
+		}
 	}
 
 	/**
