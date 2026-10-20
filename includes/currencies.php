@@ -8,6 +8,8 @@
  * @author  WP Wham
  */
 
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
 if ( ! function_exists( 'alg_wcac_get_all_currencies_names' ) ) {
 	/**
 	 * alg_wcac_get_all_currencies_names.
