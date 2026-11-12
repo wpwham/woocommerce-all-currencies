@@ -189,6 +189,7 @@ final class Alg_WC_All_Currencies {
 		if ( is_admin() ) {
 			require_once( 'includes/settings/settings-functions.php' );
 			require_once( 'includes/settings/class-wc-currencies-settings-section.php' );
+			require_once( 'includes/class-wpwham-all-currencies-review.php' );
 			$this->settings = array();
 			$this->settings['general']       = require_once( 'includes/settings/class-wc-currencies-settings-general.php' );
 			$this->settings['list']          = require_once( 'includes/settings/class-wc-currencies-settings-list.php' );
